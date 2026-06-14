@@ -1,0 +1,158 @@
+{
+    "tr":  {
+               "category":  {
+                                "structure":  "Structures / Minions",
+                                "epic_monster":  "Epic Monsters",
+                                "neutral_monster":  "Neutral Monsters"
+                            },
+               "melee_minion":  {
+                                    "name":  "Melee Minion"
+                                },
+               "range_minion":  {
+                                    "name":  "Ranged Minion"
+                                },
+               "mushroom":  {
+                                "name":  "Mushroom"
+                            },
+               "rhino":  {
+                             "name":  "Rhino"
+                         },
+               "stump":  {
+                             "name":  "Stump"
+                         },
+               "section":  {
+                               "stats":  "Stats",
+                               "rewards":  "Rewards",
+                               "growth":  "Growth (per respawn/wave)",
+                               "growth_rule":  "Growth Rules",
+                               "attack_info":  "Attack Info",
+                               "respawn":  "Respawn",
+                               "special":  "Special",
+                               "wave":  "Minion Wave",
+                               "epic_buff":  "Morgard Minion Buff",
+                               "serpen_buff":  "Serpen Permanent Buff"
+                           },
+               "stat":  {
+                            "hp":  "HP: {Value}",
+                            "attack":  "Attack: {Value}",
+                            "magic_power":  "Ability Power: {Value}",
+                            "defence":  "Armor: {Value}",
+                            "magic_resistance":  "Magic Resist: {Value}",
+                            "move_speed":  "Move Speed: {Value}",
+                            "hp_regen":  "HP Regen: {Value}",
+                            "crit_chance":  "Crit Chance: {Value}%"
+                        },
+               "stat_name":  {
+                                 "hp_regen":  "HP Regen",
+                                 "crit_chance":  "Crit Chance",
+                                 "attack_cooldown":  "Attack Cooldown",
+                                 "vamp":  "Lifesteal",
+                                 "attack_speed":  "Atk Speed",
+                                 "skill_cooldown":  "Skill CDR",
+                                 "damage_reflect":  "Dmg Reflect",
+                                 "damaged_amplify":  "Dmg Amp",
+                                 "damaged_reduce":  "Dmg Reduce",
+                                 "defence_penetration":  "Armor Pen",
+                                 "magic_pen":  "Magic Pen",
+                                 "toughness":  "Tenacity"
+                             },
+               "reward":  {
+                              "exp":  "EXP: {Value}",
+                              "gold":  "Gold: {Value}",
+                              "max_gold":  "Max Gold: {Value}",
+                              "growth_end":  "· Growth ends at {Value}s"
+                          },
+               "growth":  {
+                              "hp":  "HP: +{Value}",
+                              "attack":  "Attack: +{Value}",
+                              "magic_power":  "Ability Power: +{Value}",
+                              "defence":  "Armor: +{Value}",
+                              "magic_resistance":  "Magic Resist: +{Value}",
+                              "move_speed":  "Move Speed: +{Value}",
+                              "exp":  "EXP: +{Value}",
+                              "gold":  "Gold: +{Value}"
+                          },
+               "growth_type":  {
+                                   "respawn":  "Respawn",
+                                   "wave":  "Wave"
+                               },
+               "growth_rule":  {
+                                   "start":  "Growth Start: {Value}s",
+                                   "interval":  "Growth Interval: {Value}s",
+                                   "end":  "Growth End: {Value}s"
+                               },
+               "attack":  {
+                              "damage":  "Damage: {Value}",
+                              "ratio":  "Attack Ratio: {Value}%",
+                              "range":  "Range: {Value}",
+                              "cooldown":  "Cooldown: {Value}s"
+                          },
+               "respawn":  {
+                               "first":  "First Spawn: {Value}s",
+                               "interval":  "Respawn Interval: {Value}s"
+                           },
+               "nexus":  {
+                             "name":  "Nexus",
+                             "heal":  "Heal: {Value}% of Max HP",
+                             "heal_tick":  "Heal Interval: {Value}s",
+                             "heal_decay":  "In-Combat Heal Reduction: {Value}%"
+                         },
+               "tower":  {
+                             "name":  "Tower",
+                             "disable_tick":  "Attack Disabled After: {Value}s"
+                         },
+               "minion":  {
+                              "tower_damage":  "Tower Damage Taken: {Value}% of Max HP"
+                          },
+               "wave":  {
+                            "start":  "First Wave: {Value}s",
+                            "interval":  "Wave Interval: {Value}s",
+                            "melee_count":  "Melee Minions: {Value}",
+                            "range_count":  "Ranged Minions: {Value}"
+                        },
+               "epic":  {
+                            "name":  "Morgard",
+                            "buff_desc":  "Applied to allied minions near Morgard while the Morgard buff is active",
+                            "buff_duration":  "Buff Duration: {Value}s",
+                            "buff_range":  "Buff Range: {Value}",
+                            "buff_base":  "Base Buff:",
+                            "buff_increase":  "Per-Respawn Additional Buff:",
+                            "buff_base_minion":  "Base Buff: Minions",
+                            "buff_increase_minion":  "Per-Respawn Additional Buff: Minions",
+                            "buff_timer":  "{Name} Buff {Time}"
+                        },
+               "serpen":  {
+                              "name":  "Serpen",
+                              "buff_desc":  "Permanently applied to the entire slaying team",
+                              "current_buff":  "Current cumulative effect ({Count} stacks): {Stats}"
+                          },
+               "bee":  {
+                           "name":  "Bee",
+                           "count":  "Unit Count: 3 (triangle formation)"
+                       },
+               "buff":  {
+                            "attack":  "· Attack +{Value}",
+                            "attack_mult":  "· Attack Mult +{Value}%",
+                            "magic_power":  "· Ability Power +{Value}",
+                            "magic_power_mult":  "· AP Mult +{Value}%",
+                            "defence":  "· Armor +{Value}",
+                            "defence_mult":  "· Armor Mult +{Value}%",
+                            "hp":  "· HP +{Value}",
+                            "hp_regen":  "· HP Regen +{Value}",
+                            "magic_resistance":  "· Magic Resist +{Value}",
+                            "magic_resistance_mult":  "· MR Mult +{Value}%",
+                            "vamp":  "· Lifesteal +{Value}%",
+                            "hp_mult":  "· HP Mult +{Value}%",
+                            "move_speed_mult":  "· Move Speed Mult +{Value}%",
+                            "attack_speed_mult":  "· Atk Speed Mult +{Value}%",
+                            "skill_cooldown_mult":  "· Skill CD Mult +{Value}%",
+                            "damage_reflect":  "· Dmg Reflect +{Value}",
+                            "damaged_amplify":  "· Dmg Taken Amp +{Value}%",
+                            "damaged_reduce":  "· Dmg Taken Reduce +{Value}%",
+                            "defence_penetration":  "· Armor Pen +{Value}",
+                            "magic_resistance_penetration":  "· Magic Pen +{Value}",
+                            "toughness":  "· Tenacity +{Value}",
+                            "crit_chance":  "· Crit Chance +{Value}%"
+                        }
+           }
+}

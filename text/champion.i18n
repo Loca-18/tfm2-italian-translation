@@ -1,0 +1,420 @@
+{
+    "tr":  {
+               "category":  {
+                                "all":  "All",
+                                "melee":  "Melee",
+                                "range":  "Ranged",
+                                "magic":  "Mage",
+                                "util":  "Support",
+                                "assassin":  "Assassin"
+                            },
+               "stat":  {
+                            "base_attack":  "Basic Attack",
+                            "skill1":  "Skill 1",
+                            "skill2":  "Skill 2",
+                            "attack":  "Attack",
+                            "ability_power":  "Ability Power",
+                            "defence":  "Armor",
+                            "magic_resistance":  "Magic Resist",
+                            "attack_speed":  "Attack Speed",
+                            "range":  "Range",
+                            "hp":  "HP",
+                            "magic_power":  "Ability Power",
+                            "move_speed":  "Movement Speed",
+                            "cooltime":  "{Time}s",
+                            "skill":  "Skill 1",
+                            "ult":  "Ultimate"
+                        },
+               "patch_key":  {
+                                 "growth_attack":  "Attack Damage Growth per Level",
+                                 "growth_hp":  "Health Growth per Level",
+                                 "growth_defence":  "Armor Growth per Level",
+                                 "growth_magic_power":  "Ability Power per Level",
+                                 "growth_magic_resistance":  "Magic Resist per Level",
+                                 "growth_move_speed":  "Move Speed per Level",
+                                 "growth_range":  "Attack Range per Level",
+                                 "cooltime":  "Cooldown",
+                                 "action":  "Cast Time",
+                                 "attack_coef":  "Attack Damage Ratio",
+                                 "ap_coef":  "Ability Power Ratio",
+                                 "hp_coef":  "Health Ratio",
+                                 "current_hp_reduce_ratio":  "Current HP Reduction",
+                                 "damage":  "Base Damage",
+                                 "heal":  "Base Healing",
+                                 "hit_box":  "Hitbox Size",
+                                 "damage_area":  "Damage Area",
+                                 "projectile_speed":  "Projectile Speed",
+                                 "move_range":  "Travel Distance",
+                                 "move_time":  "Travel Time",
+                                 "airbone":  "Airborne Time",
+                                 "buff_time":  "Buff Duration",
+                                 "slow_ratio":  "Slow Amount",
+                                 "slow_time":  "Slow Duration",
+                                 "shield":  "Base Shield",
+                                 "stun":  "Stun Duration",
+                                 "bind":  "Root Duration"
+                             },
+               "description":  {
+                                   "archer":  {
+                                                  "name":  "Archer",
+                                                  "skill":  "Salta nella direzione bersaglio e infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> al nemico attaccato più di recente.",
+                                                  "skill2":  "Scocca una freccia su un nemico vicino infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>, applicando brevemente <#ef5350ff>stun<> e balzando indietro.",
+                                                  "ult":  "Si ferma sul posto e scocca in totale {Count} frecce. Ogni freccia vola verso un nemico casuale entro {Range} range, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>."
+                                              },
+                                   "bard":  {
+                                                "name":  "Bard",
+                                                "skill":  "Aumenta l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed di {AttackSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> di un alleato per <#ffb900ff>{Duration}s<>.",
+                                                "skill2":  "Riduce i cooldown delle skill degli alleati nell'area bersaglio di <#ffb900ff>{CoolReduce}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> per {Duration}s.",
+                                                "ult":  "Incanala per <#ffb900ff>{Duration}s<>, aumentando per i campioni alleati vicini <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<>(+<i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackRatio}% AP<>), <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>AP di {MagicPower}<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed di {AttackSpeed}%<>, e riducendo i cooldown delle skill del {CoolReduce}% entro {Range} range, ma riducendo <i#asset/base/ui/banpick/champion_stat_icon:armor_0><#ffdd8eff>armor del {DefenceReduce}%<> e <i#asset/base/ui/banpick/champion_stat_icon:magic resistance_0><#88ccffff>magic resist del {MagicResistanceReduce}%<>."
+                                            },
+                                   "barrier_magician":  {
+                                                            "name":  "Barrier Mage",
+                                                            "skill":  "Crea una barriera che dura <#ffb900ff>{Duration}s<>, concedendo agli alleati <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{ShieldCoef}% AP<> di <#e8d44dff>shield<> e riducendo l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed dei nemici del {AttackSpeedReduce}%<>. Dal livello 3 concede agli alleati <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed<> bonus e applica <#ef5350ff>slow<> ai nemici.",
+                                                            "skill2":  "Evoca nell'area bersaglio una barriera che dura <#ffb900ff>{Duration}s<> e distrugge tutti i proiettili al suo interno.",
+                                                            "ult":  "Crea una barriera che si restringe attorno a un campione nemico. I nemici che ne toccano il bordo subiscono <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e ricevono <#ef5350ff>stun per {Time}s<>."
+                                                        },
+                                   "berserker":  {
+                                                     "name":  "Berserker",
+                                                     "skill":  "Entra in furia per {Duration}s, aumentando l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> e ottenendo <#6aff55ff>{Vamp}% di life steal<>.",
+                                                     "skill2":  "Colpisce il terreno con entrambe le mani, lanciando i nemici in un'area stretta <#ef5350ff>airborne per {Time}s<> e infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                     "ult":  "Si lancia verso un nemico entro {Range} range e lo colpisce, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>. Il cooldown si riduce in proporzione agli <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>health<> persi."
+                                                 },
+                                   "boomerang_hunter":  {
+                                                            "name":  "Boomerang Hunter",
+                                                            "skill":  "Lancia un boomerang in linea, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>. Alla distanza massima ruota, infliggendo continuamente <#ff9028ff>{DotDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{DotCoef}% AD<> <#ff9028ff>physical damage<>.",
+                                                            "skill2":  "Lancia tre boomerang che ritornano, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> a tutti i nemici sul loro percorso.",
+                                                            "ult":  "Lancia un potente boomerang in linea retta, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>. Colpendo un campione nemico, rimbalza verso il campione nemico più vicino, aumentando il damage di <#ff9028ff>{Increase}%<> per rimbalzo. Rimbalza fino a {MaxBounce} volte."
+                                                        },
+                                   "chef":  {
+                                                "name":  "Chef",
+                                                "skill":  "Lancia un coltello in linea, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>.",
+                                                "skill2":  "Distribuisce cibo agli alleati vicini, <#6aff55ff>recuperando health<> per <#6aff55ff>{Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HealCoef}% AP<>. La cura su se stesso aumenta a <#6aff55ff>{SelfHeal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{SelfHealCoef}% AP<>.",
+                                                "ult":  "Lancia un cibo speciale a un campione alleato. Per <#ffb900ff>{Duration}s<>, gli <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>max HP aumentano del {HpRatio}%<>. Il <#e8d44dff>{SpreadRatio}%<> del damage subito viene distribuito come danno nel tempo."
+                                            },
+                                   "clown":  {
+                                                 "name":  "Clown",
+                                                 "skill":  "Si teletrasporta accanto a un bersaglio. Se nemico, infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e ottiene <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}% di movement speed<> per <#ffb900ff>{Duration}s<>.",
+                                                 "skill2":  "Sparge pugnali intorno a sé, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> ai nemici nell'area. (Può muoversi durante il lancio)",
+                                                 "ult":  "Entra in frenesia per <#ffb900ff>{Time}s<>. Tutti i pugnali diventano pugnali rimbalzanti speciali che saltano tra i nemici."
+                                             },
+                                   "dancer":  {
+                                                  "name":  "Dancer",
+                                                  "skill":  "Lancia un chakram su un nemico infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>. Ogni chakram aggiuntivo aumenta il damage di questa skill del {StackCoef}%.",
+                                                  "skill2":  "Ogni uccisione aggiunge un chakram agli attacchi base. (Max {MaxCount}, il damage cala del {Reduce}% per ogni chakram extra che colpisce)",
+                                                  "ult":  "Lancia {Count}(+stack) chakram penetranti a ventaglio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>. I chakram ritornano, infliggendo <#ff9028ff>{ReturnDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{ReturnCoef}% AD<> <#ff9028ff>physical damage<>. (Max {MaxCount})"
+                                              },
+                                   "dark_mage":  {
+                                                     "name":  "Dark Mage",
+                                                     "skill":  "Scocca una freccia oscura, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e applicando <#ef5350ff>root per {Time}s<>.",
+                                                     "skill2":  "Avvolge un'area nell'oscurità dopo un ritardo, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> ai nemici al suo interno.",
+                                                     "ult":  "Maledice un campione nemico entro {Range}, legandolo all'alleato più vicino per <#ffb900ff>{Duration}s<>. Quando uno subisce damage, il <#a974ffff>{ShareRatio}%<> viene trasferito all'altro."
+                                                 },
+                                   "demon":  {
+                                                 "name":  "Demon",
+                                                 "skill":  "Un artiglio infernale emerge dal terreno per afferrare un nemico, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e scambiando le posizioni.",
+                                                 "skill2":  "Si trasforma in un demone maggiore per {Time}s. Aumenta <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<>, <i#asset/base/ui/banpick/champion_stat_icon:armor_0><#ffdd8eff>armor di {Defense}<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> e <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed del {MoveSpeed}%<>.",
+                                                 "ult":  "Infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici entro {Range} range e applica <#ef5350ff>fear per {Time}s<>."
+                                             },
+                                   "dual_blader":  {
+                                                       "name":  "Dual Blader",
+                                                       "skill":  "Spara energia della spada in linea retta infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici colpiti e applicando <#ef5350ff>root per {Time}s<>.",
+                                                       "skill2":  "Scatta verso un nemico <#ef5350ff>immobilizzato<> entro {Range} range, lancia il nemico colpito <#ef5350ff>airborne per {Time}s<> e infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                       "ult":  "Taglia un nemico entro {Range} range con la spada, infliggendo {Count} volte <#f5f5f5ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#f5f5f5ff>true damage<>."
+                                                   },
+                                   "executioner":  {
+                                                       "name":  "Executioner",
+                                                       "skill":  "Lancia un gancio infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a un nemico colpito e trascinandolo verso di sé.",
+                                                       "skill2":  "Colpisce un nemico con un gancio infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e applicando <#ef5350ff>bleed per {Duration}s<>. Il bleed infligge <#ff9028ff>{TickDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{TickCoef}% of attack damage<> come <#ff9028ff>physical damage<> ogni {Tick}s e aumenta il damage subito del <#ef5350ff>{Debuff}%<>.",
+                                                       "ult":  "Falcia con un gancio i nemici in un'area semicircolare di fronte entro {Range}, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e rendendoli <#ef5350ff>incapaci di curarsi per {Time}s<>."
+                                                   },
+                                   "exorcist":  {
+                                                    "name":  "Exorcist",
+                                                    "skill":  "Annulla gli <#ef5350ff>status effect<> di un alleato e <#6aff55ff>recupera {Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#6aff55ff>health<>.",
+                                                    "skill2":  "Concede protezione divina a un alleato per <#ffb900ff>{Duration}s<>, aumentando <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<> e <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<>. Mentre è attiva, riflette gli effetti di crowd control.",
+                                                    "ult":  "Crea un'esplosione nell'area bersaglio, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> ai nemici. Infligge <#a974ffff>{BonusDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{BonusCoef}% AP<> di damage bonus per ogni buff sul bersaglio."
+                                                },
+                                   "fighter":  {
+                                                   "name":  "Fighter",
+                                                   "skill":  "Carica verso un bersaglio entro {Range} a velocità {Speed}, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e applicando <#ef5350ff>stun per {Stun}s<>.",
+                                                   "skill2":  "Colpisce il terreno, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> ai nemici entro {Range} e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>.",
+                                                   "ult":  "Colpisce il suolo, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici entro {Range} range e lanciandoli <#ef5350ff>airborne per {Time}s<>."
+                                               },
+                                   "gambler":  {
+                                                   "name":  "Gambler",
+                                                   "skill":  "Tira un dado e attacca i nemici entro {Range} range un numero di volte pari al risultato. Ogni attacco infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                   "skill2":  "Lancia una fiche creando entro {Range} range un'area che applica <#ef5350ff>slow del {Slow}% ai nemici<> per {Time}s in un'area di {AttackRange}. L'area esplode allo scadere, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici al suo interno.",
+                                                   "ult":  "Spara un mucchio di denaro che ammalia i nemici in linea retta. I nemici colpiti subiscono <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e ricevono <#ef5350ff>charm per {Time}s<>."
+                                               },
+                                   "ghost":  {
+                                                 "name":  "Ghost",
+                                                 "skill":  "Diventa non bersagliabile e scatta in linea. In caso di kill/assist, ottiene <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Attack} attack<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>{AttackSpeed}% attack speed<> e <#6aff55ff>recupera {Heal} health<>.",
+                                                 "skill2":  "Scatta per una breve distanza e infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> al primo nemico colpito. Può essere usata fino a {Time} volte di fila.",
+                                                 "ult":  "Diventa immune al crowd control per <#ffb900ff>{Time}s<>. Uccidere o assistere un'uccisione azzera il cooldown della skill base."
+                                             },
+                                   "gunner":  {
+                                                  "name":  "Gunner",
+                                                  "skill":  "Può attaccare i nemici mentre si muove. Dal livello 3, ogni attacco aumenta il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed del {Value}%<> per {Time}s.",
+                                                  "skill2":  "Potenzia gli attacchi per {Time}s, aumentando l'<i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<>. Ogni 3° attacco applica <#ef5350ff>slow del {Slow}% per {SlowTime}s<>.",
+                                                  "ult":  "Potenzia gli attacchi per {Time}s, aumentando l'<i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<>, e spara proiettili aggiuntivi a 2 nemici attorno al bersaglio dell'attacco. I proiettili aggiuntivi infliggono <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>."
+                                              },
+                                   "ice_mage":  {
+                                                    "name":  "Ice Mage",
+                                                    "skill":  "Congela un nemico infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e applicando <#ef5350ff>stun per {Time}s<>.",
+                                                    "skill2":  "Evoca un campo di ghiaccio che dura {Duration}s, applicando <#ef5350ff>slow del {MoveSpeed}% ai nemici<> entro {Range} e infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> ogni {Tick}s. Al termine congela e applica <#ef5350ff>stun ai nemici per {Stun}s<>.",
+                                                    "ult":  "Infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> ai nemici in un cono frontale e li respinge. Applica <#ef5350ff>slow del {Slow}% per {SlowDuration}s<> e <#ef5350ff>blocca le skill di movimento per {BlockDuration}s<>."
+                                                },
+                                   "illusionist":  {
+                                                       "name":  "Illusionist",
+                                                       "skill":  "Lancia un proiettile, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> ed evocando un'illusione che applica <#ef5350ff>taunt per {Time}s<>.",
+                                                       "skill2":  "Infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> ai nemici entro {Range} e applica <#ef5350ff>fear per {Time}s<>.",
+                                                       "ult":  "Crea un'illusione di un campione alleato vicino che dura <#ffb900ff>{Duration}s<>. L'illusione può solo eseguire attacchi base e ha statistiche pari al campione copiato."
+                                                   },
+                                   "jiangshi":  {
+                                                    "name":  "Jiangshi",
+                                                    "skill":  "Evoca un piccolo jiangshi che carica un nemico e attacca 3 volte prima di svanire, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> per colpo.",
+                                                    "skill2":  "Colpisce un nemico applicando <#ef5350ff>stun per {Time}s<>, infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e <#6aff55ff>recupera {Heal} health<>.",
+                                                    "ult":  "Per <#ffb900ff>{Duration}s<>, drena <#6aff55ff>{Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HealCoef}% AP<> <#6aff55ff>health<> dai nemici entro {Range} e infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DamageCoef}% AP<> <#a974ffff>magic damage<>."
+                                                },
+                                   "knight":  {
+                                                  "name":  "Knight",
+                                                  "skill":  "Bersaglia un nemico e gli applica <#ef5350ff>taunt per {Time}s<>.",
+                                                  "skill2":  "Si concede uno <#e8d44dff>shield<> che dura {Time}s (valore <#e8d44dff>shield<>: <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{Coef}% of max health<> + <#e8d44dff>{Amount}<>). Riflette il <#ff9028ff>{Reflect}%<> del damage subito mentre è protetto.",
+                                                  "ult":  "Evoca una zona di difesa di {Range} range che dura <#ffb900ff>{Time}s<>. Gli alleati al suo interno subiscono <#e8d44dff>{Coef}%<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpCoef}% of max health<> di damage ridotto, e i nemici al suo interno ricevono <#ef5350ff>slow del {MoveSpeedReduce}%<>."
+                                              },
+                                   "lancer":  {
+                                                  "name":  "Lancer",
+                                                  "skill":  "Respinge i nemici entro {Range} e infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                  "skill2":  "Scatta per una breve distanza infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Value}% of attack damage<> come <#ff9028ff>physical damage<> e si sposta dietro il nemico.",
+                                                  "ult":  "Carica per {Range} di distanza, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici incontrati durante la carica e lanciandoli <#ef5350ff>airborne per {Time}s<>."
+                                              },
+                                   "lightning_mage":  {
+                                                          "name":  "Lightning Mage",
+                                                          "skill":  "Scaglia un fulmine su un bersaglio, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<>. Rimbalza sui nemici vicini senza colpire due volte lo stesso bersaglio.",
+                                                          "skill2":  "Colpisce un'area con un fulmine, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e applicando <#ef5350ff>stun per {Time}s<>.",
+                                                          "ult":  "Incanala un raggio di fulmini su un campione nemico per <#ffb900ff>{Duration}s<>, applicandogli <#ef5350ff>stun<>. Infligge continuamente <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> al bersaglio e ai nemici vicini."
+                                                      },
+                                   "magic_knight":  {
+                                                        "name":  "Magic Knight",
+                                                        "skill":  "Fa esplodere il mana in una lunga linea stretta infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<>.",
+                                                        "skill2":  "Crea un nucleo di mana che dura {Duration}s e attira verso il centro i nemici entro {Range} ogni {Tick}s, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<>.",
+                                                        "ult":  "Per <#ffb900ff>{Time}s<>, <i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>il range aumenta di {Range}<> e l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed aumenta del {AttackSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackSpeedCoef}% of ability power<>. Gli attacchi base attivano la prima skill."
+                                                    },
+                                   "monk":  {
+                                                "name":  "Monk",
+                                                "skill":  "<#6aff55ff>Recupera {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> agli alleati entro {Range}. La cura aumenta a <#6aff55ff>{SingleValue}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}%<> se bersaglia solo se stesso.",
+                                                "skill2":  "Colpo del palmo che infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> entro {Range} e applica <#ef5350ff>stun per {Time}s<>.",
+                                                "ult":  "Concede agli alleati entro {Range} uno <#e8d44dff>shield<> di <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<>. Gli alleati protetti ottengono <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}% di movement speed<>."
+                                            },
+                                   "necromancer":  {
+                                                       "name":  "Necromancer",
+                                                       "skill":  "Evoca un ghoul come minion per <#ffb900ff>{Duration}(+{DurationCoef}% of ability power)s<>. Il livello riduce il cooldown e aumenta la durata di <#ffb900ff>{DurationPerLevel}s<> per livello.",
+                                                       "skill2":  "Marchia un nemico per <#ffb900ff>{Time}s<> per infuriare i ghoul. I ghoul ottengono <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>{AttackSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackSpeedCoef}% AP<> di attack speed e <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{MoveSpeedCoef}% AP<> di movement speed.",
+                                                       "ult":  "Resuscita un campione alleato morto come revenant. Drena <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpDrain} HP<> al secondo mentre è attivo."
+                                                   },
+                                   "ninja":  {
+                                                 "name":  "Ninja",
+                                                 "skill":  "Lancia una sfera d'ombra per scattare su un nemico colpito e infliggere <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                 "skill2":  "Scatta verso un bersaglio mentre è non bersagliabile e attacca tre volte di fila, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> per colpo.",
+                                                 "ult":  "Carica verso un nemico entro {Range} range, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>."
+                                             },
+                                   "ogre":  {
+                                                "name":  "Ogre",
+                                                "skill":  "Quando subisce damage da un campione nemico, aumenta i <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>max health di Ogre di {Value}<>.",
+                                                "skill2":  "Randella un singolo bersaglio applicando <#ef5350ff>stun per {Time}s<> e infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpCoef}% of max health<> come <#ff9028ff>physical damage<>.",
+                                                "ult":  "Diventa gigantesco per {Time}s, aumentando i <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>max health del {Buff}%<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpCoef}% of max health<>."
+                                            },
+                                   "plague_doctor":  {
+                                                         "name":  "Plague Doctor",
+                                                         "skill":  "Inietta un siero a un alleato e a se stesso, aumentando l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackSpeedCoef}% AP<> e il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>movement speed del {MoveSpeed}%<> per <#ffb900ff>{Duration}s<>.",
+                                                         "skill2":  "Esegue un rituale su un alleato per <#ffb900ff>{Duration}s<>, aumentando il <i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>range di {Range}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{RangeCoef}% AP<> e aggiungendo uno scatto agli attacchi.",
+                                                         "ult":  "Somministra un elisir proibito a un alleato, riducendo i suoi HP attuali del {HpReduceRatio}% ma per {Duration}s impedendo agli HP di scendere sotto 1 e aumentando <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack di {Attack}<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackSpeedCoef}% AP<> e <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed del {MoveSpeed}%<>."
+                                                     },
+                                   "poison_dart_hunter":  {
+                                                              "name":  "Poison Dart Hunter",
+                                                              "skill":  "Sparge un campo velenoso, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>, avvelenando per <#ffb900ff>{Duration}s<> e applicando <#ef5350ff>slow del {Slow}%<>.",
+                                                              "skill2":  "Attaccare nemici avvelenati aumenta il <i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>range di {Range}<>. Allontanarsi dai nemici avvelenati aumenta il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>movement speed del {Speed}%<>.",
+                                                              "ult":  "Concede agli alleati vicini veleno sugli attacchi per <#ffb900ff>{Duration}s<>. Il veleno infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> in <#ffb900ff>{PoisonDuration}s<>."
+                                                          },
+                                   "priest":  {
+                                                  "name":  "Priest",
+                                                  "skill":  "Posiziona un campo di cura che dura {Duration}s entro {Range} e <#6aff55ff>recupera {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> agli alleati ogni {Tick}s.",
+                                                  "skill2":  "Concede a un alleato uno <#e8d44dff>shield<> di <#e8d44dff>{Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> per {Time}s. Ne aumenta l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> mentre è protetto.",
+                                                  "ult":  "Vola in aria per {Time}s rimanendo immobile, sparando un proiettile ogni {Tick}s che <#6aff55ff>recupera {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> all'alleato con meno health entro il range dell'ultimate."
+                                              },
+                                   "pyromancer":  {
+                                                      "name":  "Pyromancer",
+                                                      "skill":  "Lancia una palla di fuoco, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> entro {Range}.",
+                                                      "skill2":  "Evoca un campo di fuoco che dura {Duration}s, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> ogni {Tick}s entro {Range}.",
+                                                      "ult":  "Crea una massiccia esplosione entro {Range}, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> a tutti i nemici."
+                                                  },
+                                   "pythoness":  {
+                                                     "name":  "Pythoness",
+                                                     "skill":  "<#6aff55ff>Recupera {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> a un alleato.",
+                                                     "skill2":  "<#6aff55ff>Recupera {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> a un alleato e infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DamageCoef}% of ability power<> come <#a974ffff>magic damage<> ai nemici entro {Range} attorno a lui.",
+                                                     "ult":  "Evoca una Porta degli Spiriti. La Porta degli Spiriti spara proiettili che <#6aff55ff>recuperano {Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> <#6aff55ff>health<> agli alleati entro {Range} range, oppure infliggono <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DamageCoef}% of ability power<> come <#a974ffff>magic damage<> ai nemici."
+                                                 },
+                                   "shadowmancer":  {
+                                                        "name":  "Shadowmancer",
+                                                        "skill":  "Ombre oscure si levano, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e applicando <#ef5350ff>root per {Time}s<>.",
+                                                        "skill2":  "Fa esplodere l'ombra di un nemico immobilizzato, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<>.",
+                                                        "ult":  "Lancia un proiettile d'ombra penetrante, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> ai campioni nemici colpiti e <#ef5350ff>bandendoli per {BanishTime}s<>."
+                                                    },
+                                   "shield_bearer":  {
+                                                         "name":  "Shield Bearer",
+                                                         "skill":  "Concede uno <#e8d44dff>shield<> di <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{Coef}% max HP<> a un alleato bersaglio e a se stesso per {Duration}s.",
+                                                         "skill2":  "Subisce il {Damage}% del damage inflitto agli alleati vicini per {Duration}s e applica <#ef5350ff>slow del {Coef}% agli attaccanti<> + <i#asset/base/ui/banpick/champion_stat_icon:armor_0><#ffdd8eff>{DefCoef}% of armor<>.",
+                                                         "ult":  "Ottiene <#e8d44dff>{DamageReduce}%<> + <i#asset/base/ui/banpick/champion_stat_icon:magic resistance_0><#88ccffff>{MrCoef}% of magic resist<> di riduzione del damage e immunità al CC per {Duration}s applicando <#ef5350ff>taunt a tutti i nemici per {TauntDuration}s<>. Non può muoversi mentre è attiva."
+                                                     },
+                                   "soldier":  {
+                                                   "name":  "Sniper",
+                                                   "skill":  "L'<i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>attack range aumenta di {GrowthRange}<> per livello.",
+                                                   "skill2":  "Spara tre proiettili su un nemico per pesante <#ff9028ff>physical damage<> (<#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> per proiettile). Il range della skill scala con l'attack range base.",
+                                                   "ult":  "Spara un enorme proiettile in linea retta sui nemici entro {Range} range. Il proiettile infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici sul suo percorso, e ogni colpo riduce il damage del {Decay}%."
+                                               },
+                                   "swordman":  {
+                                                    "name":  "Swordsman",
+                                                    "skill":  "Spara energia della spada infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici colpiti (range {Range}).",
+                                                    "skill2":  "Colpisce un singolo bersaglio tre volte di fila per pesante <#ff9028ff>physical damage<>. <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> per colpo.",
+                                                    "ult":  "Carica per {Range} di distanza in linea retta, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici sul percorso. Se l'ultimate uccide un nemico, il cooldown viene azzerato."
+                                                },
+                                   "taoist":  {
+                                                  "name":  "Taoist",
+                                                  "skill":  "Sigilla un nemico con un talismano, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e <#ef5350ff>impedendo gli attacchi base per {Time}(+{TimeCoef}% of ability power)s<>.",
+                                                  "skill2":  "Attacca un talismano a un nemico, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e <#ef5350ff>impedendo l'uso delle skill per {Time}(+{TimeCoef}% of ability power)s<>.",
+                                                  "ult":  "Lancia un talismano in linea retta. Infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e <#ef5350ff>rende inabile il bersaglio per {Time}s<>, rendendolo non bersagliabile. Al termine dell'effetto, si propaga ai nemici vicini."
+                                              },
+                                   "vampire":  {
+                                                   "name":  "Vampire",
+                                                   "skill":  "Drena sangue da un nemico infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<>, <#6aff55ff>recupera {Heal} health<> e accumula stack. La <#6aff55ff>cura aumenta di {Stack}<> per stack.",
+                                                   "skill2":  "Consuma il {Value}% degli health per sputare sangue in un cono frontale, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<>. Il damage aumenta di {Stack} per stack.",
+                                                   "ult":  "Diventa non bersagliabile e carica per {Range} di distanza, assorbendo <#6aff55ff>{Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#6aff55ff>health<> da ogni nemico sul percorso, e infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DamageCoef}% of ability power<> come <#a974ffff>magic damage<>."
+                                               },
+                                   "werewolf":  {
+                                                    "name":  "Werewolf",
+                                                    "skill":  "Artiglia in avanti, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e <#6aff55ff>curandosi del {HealRatio}% del damage inflitto<>.",
+                                                    "skill2":  "Scatta in avanti, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>.",
+                                                    "ult":  "Incanala per <#ffb900ff>{Duration}s<>, infliggendo ripetutamente <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e applicando <#ef5350ff>bleed per {BleedTime}s<> (<#ff9028ff>{BleedDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{BleedCoef}% AD<>)."
+                                                },
+                                   "dokkaebi":  {
+                                                    "name":  "Dokkaebi",
+                                                    "skill":  "Potenzia la clava per <#ffb900ff>{Duration}s<>. Ogni attacco crea un'onda d'urto a ventaglio che infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                    "skill2":  "Potenzia la pelle per <#ffb900ff>{Duration}s<>, ottenendo uno <#e8d44dff>shield<> di <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> e <#e8d44dff>{DamageReduction}% di riduzione del damage<>.",
+                                                    "ult":  "Lancia un proiettile in linea retta. I nemici colpiti vengono gradualmente <#ef5350ff>rallentati in {SlowTime}s<>, poi ricevono <#ef5350ff>root per {BindTime}s<>. Al root, infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici vicini. L'effetto si propaga ai nemici danneggiati."
+                                                },
+                                   "hammerer":  {
+                                                    "name":  "Hammerer",
+                                                    "skill":  "Vibra un martello su un nemico vicino infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e lanciandolo <#ef5350ff>airborne per {Time}s<>.",
+                                                    "skill2":  "Si concentra con il martello alzato, poi colpisce il terreno infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> entro {Range} e applicando <#ef5350ff>slow del {Move}% per {Time}s<>.",
+                                                    "ult":  "Vibra il martello ad ampio raggio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici in un'area semicircolare entro {Range} range. I nemici colpiti vengono respinti per {Time}s, e i campioni nemici colpiti dal nemico spinto vanno <#ef5350ff>airborne per {Airborne}s<>."
+                                                },
+                                   "inquisitor":  {
+                                                      "name":  "Inquisitor",
+                                                      "skill":  "Scatta per una breve distanza, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> al primo nemico colpito e applicando <#ef5350ff>bleed<>.",
+                                                      "skill2":  "Colpisce un nemico bersaglio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>. Azzera il cooldown della Skill 1 se il nemico è in <#ef5350ff>bleed<>.",
+                                                      "ult":  "Carica verso un campione nemico, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici nell'area all'arrivo. I nemici sotto il {Threshold}% dei max HP dopo aver subito damage vengono giustiziati. All'esecuzione, i nemici vicini ricevono <#ef5350ff>fear per {FearTime}s<>."
+                                                  },
+                                   "pole_warrior":  {
+                                                        "name":  "Pole Warrior",
+                                                        "skill":  "Salta su un nemico e colpisce dall'alto con il palo infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                        "skill2":  "Si sposta per una breve distanza, sale sul palo diventando non bersagliabile per {Time}s, poi colpisce infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici entro {Range}.",
+                                                        "ult":  "Carica verso un nemico designato entro {Range} range, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e lanciando il bersaglio <#ef5350ff>airborne per {Time}s<>."
+                                                    },
+                                   "spirit_caller":  {
+                                                         "name":  "Spirit Caller",
+                                                         "skill":  "Lega uno spirito a un alleato per <#ffb900ff>{Duration}s<>, <#6aff55ff>recuperando health<> per <#6aff55ff>{Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HealRatio}% AP<> e aumentando il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>movement speed del {SpeedUp}%<>.",
+                                                         "skill2":  "Lega uno spirito a un nemico per <#ffb900ff>{Duration}s<>, riducendo <i#asset/base/ui/banpick/champion_stat_icon:armor_0><#ffdd8eff>armor di {DefDown}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DefCoef}% AP<>, <i#asset/base/ui/banpick/champion_stat_icon:magic resistance_0><#88ccffff>magic resist di {MrDown}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{MrCoef}% AP<> e applicando <#ef5350ff>slow del {Slow}%<>.",
+                                                         "ult":  "Fa detonare gli spiriti legati. Gli spiriti alleati concedono <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{ShieldCoef}% AP<> di <#e8d44dff>shield<> e <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>{AttackSpeed}% attack speed<>. Gli spiriti nemici infliggono <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DamageCoef}% of ability power<> come <#a974ffff>magic damage<> e applicano <#ef5350ff>stun per {StunTime}s<>."
+                                                     },
+                                   "whip_master":  {
+                                                       "name":  "Whip Master",
+                                                       "skill":  "Sferza con la frusta, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpRatio}% target HP<>.",
+                                                       "skill2":  "Sferza la frusta in un cono, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e respingendo i nemici.",
+                                                       "ult":  "Incanala per <#ffb900ff>{Duration}s<>, lanciando proiettili penetranti che infliggono <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>."
+                                                   },
+                                   "enchanter":  {
+                                                     "name":  "Enchanter",
+                                                     "skill":  "Potenzia un alleato per <#ffb900ff>{Duration}s<>, aumentando il <i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>range di {Increase}<>.",
+                                                     "skill2":  "Potenzia l'equipaggiamento di un alleato per <#ffb900ff>{Duration}s<>, aumentando le statistiche degli item del <#ffb900ff>{Percent}%<>.",
+                                                     "ult":  "Potenzia un campione alleato per {Duration}s, concedendo <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack {Attack}<>(+<i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{AttackRatio}% AP<>), <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed {AttackSpeed}%<>, <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed {MoveSpeed}%<> e immunità al crowd control."
+                                                 },
+                                   "siege_breaker":  {
+                                                         "name":  "Siege Breaker",
+                                                         "skill":  "Colpisce con un flagello, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<>. Infligge {Bonus}% di damage bonus alle strutture.",
+                                                         "skill2":  "Colpisce il terreno, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> a tutti i nemici, strutture incluse.",
+                                                         "ult":  "Per {Time}s, aumenta <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>attack del {Attack}%<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AttackSpeed}%<> e <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>movement speed del {MoveSpeed}%<>."
+                                                     },
+                                   "prisoner":  {
+                                                    "name":  "Prisoner",
+                                                    "skill":  "Lancia una palla di ferro in linea, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> a tutti i nemici nell'area.",
+                                                    "skill2":  "Ruggisce per ottenere uno <#e8d44dff>shield<> di <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{Coef}% of max health<> per {Time}s e applica <#ef5350ff>taunt<> a tutti i nemici vicini.",
+                                                    "ult":  "Carica verso un nemico, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici vicini al punto di atterraggio e applicando loro <#ef5350ff>stun per {Time}s<>."
+                                                },
+                                   "android":  {
+                                                   "name":  "Android",
+                                                   "skill":  "Spara un'onda d'urto in linea retta. L'onda esplode in cerchio colpendo un nemico o raggiungendo il range massimo, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e applicando <#ef5350ff>slow del {Slow}% ai nemici per {Time}s<>.",
+                                                   "skill2":  "Si concede uno <#e8d44dff>shield di {Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{Coef}% of max health<> per {Time}s. Quando lo shield scade, applica <#ef5350ff>stun ai nemici entro {Range} range per {StunTime}s<>.",
+                                                   "ult":  "Concede uno <#e8d44dff>shield di {Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{Coef}% of max health<> a un alleato designato entro {Range} range, e si teletrasporta da lui dopo {Time}s."
+                                               },
+                                   "white_mage":  {
+                                                      "name":  "White Mage",
+                                                      "skill":  "Un raggio esplode dopo un ritardo, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> a tutti i nemici.",
+                                                      "skill2":  "Evoca raggi che attaccano 5 volte, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>.",
+                                                      "ult":  "Spara un raggio penetrante, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> ai nemici colpiti e applicando <#ef5350ff>root per {Time}s<>."
+                                                  },
+                                   "wind_mage":  {
+                                                     "name":  "Wind Mage",
+                                                     "skill":  "Evoca un vortice per <#ffb900ff>{Duration}s<>, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> ogni {Tick}s entro {Range}. Gli alleati al suo interno ottengono <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}% movement speed<>.",
+                                                     "skill2":  "Lancia in avanti cinque vortici, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<>.",
+                                                     "ult":  "Scatena un tornado massiccio. I nemici colpiti subiscono <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e vanno <#ef5350ff>airborne per {AirborneTime}s<>. Dimensione, damage e durata dell'airborne calano a ogni colpo. Si reindirizza verso altri campioni."
+                                                 },
+                                   "bomber":  {
+                                                  "name":  "Bomber",
+                                                  "skill":  "Lancia una bomba, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> a tutti i nemici nell'area.",
+                                                  "skill2":  "Posiziona una mina invisibile che infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% AD<> <#ff9028ff>physical damage<> e applica <#ef5350ff>root per {Time}s<> quando viene calpestata. Non si attiva sui minion.",
+                                                  "ult":  "Lancia una grossa bomba nell'area bersaglio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> a tutti i nemici e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>."
+                                              },
+                                   "cavalry_knight":  {
+                                                          "name":  "Cavalry",
+                                                          "skill":  "Carica in linea retta per impalare il primo nemico colpito, applicando <#ef5350ff>root per {Time}s<> e infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>. La velocità di carica scala con il move speed.",
+                                                          "skill2":  "Aumenta il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed del {Speed}%<> per {Time}s e potenzia l'arma in una lancia fiammeggiante, aggiungendo agli attacchi <#ff9028ff>{BurnDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{BurnCoef}% of attack damage<> di burn damage per {BurnTime}s.",
+                                                          "ult":  "Aumenta il <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>move speed del {Speed}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{SpeedCoef}% of attack damage<> per {Time}s, e crea una zona che conduce alla tua posizione. Gli alleati sulla zona ottengono <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{Buff}%<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{SpeedCoef}% of attack damage<> di move speed muovendosi verso la cavalleria."
+                                                      },
+                                   "druid":  {
+                                                 "name":  "Druid",
+                                                 "skill":  "Evoca un orso. Se muore, il druido subisce <#ff9028ff>{DeathDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{DeathCoef}% AP<> di damage. Lanciarla mentre è evocato <#6aff55ff>cura<> l'orso per <#6aff55ff>{Heal}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HealCoef}% AP<>.",
+                                                 "skill2":  "Evoca un'aquila. Se muore, il druido subisce damage. Lanciarla mentre è evocata fa caricare l'aquila contro un nemico, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e <#6aff55ff>curandosi del {Lifesteal}% del damage inflitto<>.",
+                                                 "ult":  "Lancia {Count} proiettili spirito d'orso e d'aquila nella direzione bersaglio. Ognuno infligge <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<> come <#a974ffff>magic damage<> e respinge i nemici."
+                                             },
+                                   "voodoo_shaman":  {
+                                                         "name":  "Voodoo Shaman",
+                                                         "skill":  "Lancia un proiettile maledetto, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<>, applicando <#ef5350ff>slow del {Slow}% per {Time}s<> e riducendo l'<i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>attack speed del {AtkSpd}%<> per <#ffb900ff>{AtkSpdTime}s<>.",
+                                                         "skill2":  "Maledice un nemico per <#ffb900ff>{Time}s<>, infliggendo <#a974ffff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<>. Infligge <#a974ffff>{HitDmg}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HitCoef}% AP<> di damage bonus per ogni colpo subito (max {Max}).",
+                                                         "ult":  "Crea una zona voodoo per <#ffb900ff>{Duration}s<>. I nemici al suo interno subiscono periodicamente <i#asset/base/ui/banpick/champion_stat_icon:hp_0><#6aff55ff>{HpRatio}% max HP<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% AP<> <#a974ffff>magic damage<> e ricevono <#ef5350ff>silence<>."
+                                                     },
+                                   "hitman":  {
+                                                  "name":  "Hitman",
+                                                  "skill":  "Spara una raffica di tre colpi. Il primo colpo applica <#ef5350ff>stun per {StunTime}s<>, e ciascuno dei due successivi infligge <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>.",
+                                                  "skill2":  "Si teletrasporta dietro il campione nemico attaccato più di recente entro {Range} range.",
+                                                  "ult":  "Marchia un campione nemico. Dopo <#ffb900ff>{Duration}s<>, infligge <#ff9028ff>{Damage} + {Coef}% del damage subito durante il marchio<> come <#ff9028ff>physical damage<>. In caso di kill, ottiene stealth per <#ffb900ff>{InvisibleDuration}s<>."
+                                              },
+                                   "guardian_spirit":  {
+                                                           "name":  "Guardian Spirit",
+                                                           "skill":  "<#6aff55ff>Cura<> gli alleati vicini per <#6aff55ff>{Value}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{Coef}% of ability power<>.",
+                                                           "skill2":  "Concede a un alleato <#e8d44dff>{Shield}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{ShieldCoef}% AP<> di <#e8d44dff>shield<> e <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}% movement speed<>.",
+                                                           "ult":  "Crea un santuario per <#ffb900ff>{Duration}s<>, <#6aff55ff>curando<> periodicamente gli alleati per <#6aff55ff>{HealValue}<> + <i#asset/base/ui/banpick/champion_stat_icon:ap_0><#a974ffff>{HealCoef}% AP<> e concedendo uno shield di rinascita."
+                                                       },
+                                   "hunter":  {
+                                                  "name":  "Hunter",
+                                                  "skill":  "Si teletrasporta su un nemico e passa alla modalità a distanza. Il <i#asset/base/ui/banpick/champion_stat_icon:range_0><#ff86c2ff>range aumenta di {RangeIncrease}<>.",
+                                                  "skill2":  "Scatta verso un nemico marchiato con 3 stack, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e applicando <#ef5350ff>silence per {SilenceTime}s<>.",
+                                                  "ult":  "Scatta in avanti, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> ai nemici sul percorso. Dopo il lancio, può essere rilanciata una volta per un breve tempo; un kill o un assist concede un rilancio aggiuntivo."
+                                              },
+                                   "circus_blade":  {
+                                                        "name":  "Circus Blade",
+                                                        "skill":  "Lancia una lama nella direzione bersaglio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<> e applicando <#ef5350ff>slow del {Slow}% per {SlowTime}s<>. Accumula fino a <#ffb900ff>{ChargeCount}<> cariche. Ottiene <#ffb900ff>1<> carica attaccando campioni nemici con attacchi base.",
+                                                        "skill2":  "Ottiene <i#asset/base/ui/banpick/champion_stat_icon:speed_0><#ffffffff>{MoveSpeed}% movement speed<>, <i#asset/base/ui/banpick/champion_stat_icon:attack_speed_0><#ceff99ff>{AttackSpeed}% attack speed<> e l'attraversamento dei muri per <#ffb900ff>{Duration}s<>.",
+                                                        "ult":  "Scatta verso un nemico bersaglio, infliggendo <#ff9028ff>{Damage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{Coef}% of attack damage<> come <#ff9028ff>physical damage<>. Infligge <#ff9028ff>{SplashDamage}<> + <i#asset/base/ui/banpick/champion_stat_icon:ad_0><#ff9028ff>{SplashCoef}% AD<> di splash damage e <#ef5350ff>respinge<> i nemici vicini, poi svanisce."
+                                                    }
+                               }
+           }
+}

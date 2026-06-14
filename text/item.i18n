@@ -1,0 +1,179 @@
+{
+    "tr":  {
+               "category":  {
+                                "all":  "All",
+                                "ad":  "Attack Damage",
+                                "attack_speed":  "Attack Speed",
+                                "defense":  "Armor",
+                                "magic_resistance":  "Magic Resist",
+                                "magic":  "Ability Power",
+                                "hp":  "HP"
+                            },
+               "info":  {
+                            "tier":  "Tier",
+                            "price":  "Price",
+                            "stat":  "Stats",
+                            "option":  "Effect"
+                        },
+               "tier_header":  {
+                                   "1":  "Tier 1",
+                                   "2":  "Tier 2",
+                                   "3":  "Tier 3",
+                                   "4":  "Tier 4",
+                                   "5":  "Tier 5"
+                               },
+               "related":  {
+                               "sub_items":  "Builds From",
+                               "upper_items":  "Builds Into"
+                           },
+               "tier":  "Tier {Tier}",
+               "spec":  {
+                            "attack":  "Attack Damage +{Value}",
+                            "magic_power":  "Ability Power +{Value}",
+                            "defence":  "Armor +{Value}",
+                            "hp":  "HP +{Value}",
+                            "magic_resistance":  "Magic Resist +{Value}",
+                            "vamp":  "Lifesteal +{Value}%",
+                            "hp_mult":  "HP +{Value}%",
+                            "move_speed_mult":  "Movement Speed +{Value}%",
+                            "attack_speed_mult":  "Attack Speed +{Value}%",
+                            "skill_cooldown_mult":  "Cooldown Reduction +{Value}%",
+                            "range":  "Range +{Value}",
+                            "defence_mult":  "Armor +{Value}%",
+                            "defence_penetration":  "Armor Penetration +{Value}%",
+                            "magic_resistance_penetration":  "Magic Penetration +{Value}%",
+                            "heal_reduce":  "Reduces enemy healing by {Value}% for 2 seconds",
+                            "shield_break":  "Destroy {Value}% of enemy shield on attack",
+                            "attack_enemy_hp_ratio":  "Basic Attack Max HP Damage +{Value}%",
+                            "skill_enemy_hp_ratio":  "Skill Max HP Damage +{Value}%",
+                            "attack_my_hp_ratio":  "Damage Based on Max HP +{Value}%",
+                            "reflect":  "Reflect Damage +{Value}%",
+                            "dot_amplify":  "DoT Damage +{Value}%",
+                            "hp_regen":  "HP Regen per second +{Value}",
+                            "crit_chance":  "Critical Strike Chance +{Value}%",
+                            "base_attack_damaged_reduce":  "Basic Attack Damage Reduction +{Value}%",
+                            "skill_damaged_reduce":  "Skill Damage Reduction +{Value}%",
+                            "toughness":  "Tenacity +{Value}%"
+                        },
+               "ironsword":  {
+                                 "name":  "Iron Sword",
+                                 "option":  ""
+                             },
+               "soldiers_longsword":  {
+                                          "name":  "Soldier's Longsword",
+                                          "option":  ""
+                                      },
+               "ruinous_blade":  {
+                                     "name":  "Ruinous Blade",
+                                     "option":  ""
+                                 },
+               "conquerors_greatsword":  {
+                                             "name":  "Conqueror's Greatsword",
+                                             "option":  ""
+                                         },
+               "warlords_final_judgement":  {
+                                                "name":  "Warlord's Final Judgment",
+                                                "option":  ""
+                                            },
+               "dagger":  {
+                              "name":  "Dagger",
+                              "option":  ""
+                          },
+               "wind_dagger":  {
+                                   "name":  "Wind Dagger",
+                                   "option":  ""
+                               },
+               "twin_stormblade":  {
+                                       "name":  "Twin Stormblade",
+                                       "option":  ""
+                                   },
+               "thunderclaw":  {
+                                   "name":  "Thunderclaw",
+                                   "option":  ""
+                               },
+               "storm_sovereign":  {
+                                       "name":  "Storm Sovereign",
+                                       "option":  ""
+                                   },
+               "steel_armor":  {
+                                   "name":  "Steel Armor",
+                                   "option":  ""
+                               },
+               "gatekeepers_armor":  {
+                                         "name":  "Gatekeeper's Armor",
+                                         "option":  ""
+                                     },
+               "black_knights_heavy_plate":  {
+                                                 "name":  "Black Knight's Heavy Plate",
+                                                 "option":  ""
+                                             },
+               "eternal_iron_plate":  {
+                                          "name":  "Eternal Iron Plate",
+                                          "option":  ""
+                                      },
+               "impregnable_fortress":  {
+                                            "name":  "Impregnable Fortress",
+                                            "option":  "When hit by a basic attack, deals {Flat} + {Ratio}% of your Armor as magic damage to the attacker."
+                                        },
+               "mystic_cloak":  {
+                                    "name":  "Mystic Cloak",
+                                    "option":  ""
+                                },
+               "night_hood":  {
+                                  "name":  "Night Hood",
+                                  "option":  ""
+                              },
+               "dusk_raven":  {
+                                  "name":  "Dusk Raven",
+                                  "option":  ""
+                              },
+               "souls_edge":  {
+                                  "name":  "Soul's Edge",
+                                  "option":  ""
+                              },
+               "veil_of_annihilation":  {
+                                            "name":  "Veil of Annihilation",
+                                            "option":  ""
+                                        },
+               "arcane_crystal":  {
+                                      "name":  "Arcane Crystal",
+                                      "option":  ""
+                                  },
+               "spirit_crystal":  {
+                                      "name":  "Spirit Crystal",
+                                      "option":  ""
+                                  },
+               "staff_of_rapture":  {
+                                        "name":  "Staff of Rapture",
+                                        "option":  ""
+                                    },
+               "angels_fang":  {
+                                   "name":  "Angel's Fang",
+                                   "option":  ""
+                               },
+               "prophet_of_the_abyss":  {
+                                            "name":  "Prophet of the Abyss",
+                                            "option":  ""
+                                        },
+               "vital_orb":  {
+                                 "name":  "Vital Orb",
+                                 "option":  ""
+                             },
+               "hardened_heart":  {
+                                      "name":  "Hardened Heart",
+                                      "option":  ""
+                                  },
+               "ring_of_reincarnation":  {
+                                             "name":  "Ring of Reincarnation",
+                                             "option":  "Recovers {Flat} + {Ratio}% of max HP per second."
+                                         },
+               "hourglass_of_eternity":  {
+                                             "name":  "Hourglass of Eternity",
+                                             "option":  "Recovers {Flat} + {Ratio}% of max HP per second."
+                                         },
+               "giants_horn_shard":  {
+                                         "name":  "Giant's Horn Shard",
+                                         "option":  "Recovers {RegenFlat} HP per second and deals {DmgFlat} + {DmgRatio}% of max HP as magic damage to all enemies within {Range} range."
+                                     }
+           }
+}

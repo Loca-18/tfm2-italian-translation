@@ -1,0 +1,68 @@
+{
+  "tr": {
+    "age": "{Age} anni",
+    "squad_status": {
+      "desc": "Stato nella Rosa",
+      "core": "Giocatore Cardine",
+      "important": "Giocatore Chiave",
+      "general": "Titolare",
+      "sub": "Riserva",
+      "prospect": "Prospetto"
+    },
+    "stat": {
+      "last_hit": "Uccisioni Mostri",
+      "skill_avoid": "Schivata Abilità",
+      "skill_hit": "Precisione Abilità",
+      "positioning": "Posizionamento",
+      "control_speed": "Velocità di Reazione",
+      "concentration": "Concentrazione",
+      "mental": "Mentalità",
+      "judgement": "Giudizio",
+      "order": "Chiamate",
+      "roaming": "Roaming",
+      "aggressive": "Aggressività",
+      "ego": "Ego",
+      "stamina": "Resistenza",
+      "condition": "Condizione",
+      "condition_level": {
+        "very_bad": "Molto Scarsa",
+        "bad": "Scarsa",
+        "normal": "Normale",
+        "good": "Buona",
+        "very_good": "Ottima"
+      },
+      "stress": "Stress",
+      "champion": "Padronanza Champion",
+      "description": {
+        "last_hit": "Più alta è questa statistica, meglio il giocatore uccide gregari, mostri neutrali ed epici.",
+        "skill_avoid": "Più alta è questa statistica, meglio il giocatore schiva le abilità non mirate degli avversari.",
+        "skill_hit": "Più alta è questa statistica, meglio il giocatore centra gli avversari con abilità non mirate.",
+        "positioning": "Più alta è questa statistica, meglio il giocatore valuta rischi e vantaggi per occupare posizioni favorevoli.",
+        "control_speed": "Più alta è questa statistica, minore è il ritardo tra gli input del giocatore.",
+        "concentration": "Più alta è questa statistica, meglio il giocatore mantiene le prestazioni anche nelle partite lunghe.",
+        "mental": "Più alta è questa statistica, meglio il giocatore mantiene le prestazioni anche quando la partita è sfavorevole.",
+        "judgement": "Più alta è questa statistica, più accuratamente il giocatore valuta la situazione attuale.",
+        "order": "Più alta è questa statistica, più il giocatore effettua chiamate durante la partita.",
+        "roaming": "Più alta è questa statistica, più il giocatore interviene nella jungle e nelle altre corsie.",
+        "aggressive": "Più alta è questa statistica, più rischi il giocatore assume nelle sue azioni.",
+        "ego": "Più alta è questa statistica, più il giocatore si affida al proprio giudizio.",
+        "stamina_effect": "Più alta è questa statistica, meglio il giocatore riesce a esprimere tutte le sue capacità anche su più set.",
+        "condition_effect": "A seconda della condizione, tutte le statistiche vengono applicate all'80%~120%."
+      },
+      "most_champion": "Più Giocato",
+      "relationship": {
+        "name": "Rapporto",
+        "positive": "Positivo ({Value}%)",
+        "neutral": "Neutro ({Value}%)",
+        "negative": "Negativo ({Value}%)"
+      },
+      "position": "Posizione",
+      "communication": "Livello di Comunicazione",
+      "trait": {
+        "name": "Carattere",
+        "iron_mental": "Mente d'Acciaio: La fiducia non cala con il feedback.",
+        "big_talker": "Gran Parlatore: Raddoppia la probabilità di richiedere feedback."
+      }
+    }
+  }
+}
